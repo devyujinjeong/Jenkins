@@ -24,7 +24,6 @@ public class CalculatorController {
     public ResponseEntity<CalculatorDTO> plusTwoNumbers(CalculatorDTO calculatorDTO) {
         log.info("핸들러 실행 여부 및 값 확인 : {}", calculatorDTO);
 
-        System.out.println("과연?! 제대로 됐을끼ㅏ");
         /* Service 계층으로 기능 요청 */
         int result = calculatorService.plusTwoNumbers(calculatorDTO);
 
